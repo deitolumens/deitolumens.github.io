@@ -1,4 +1,11 @@
 <html lang="en">
+<body class="bg-blue-50 p-4 min-h-screen">
+  <!-- Judul Baru -->
+  <h1 class="text-3xl text-blue-800 font-bold text-center mb-8 mt-4">
+    SIPANTAO <span class="font-normal">(Sistem Inkubasi Penetasan Telur Otomatis)</span>
+  </h1>
+  
+  <div class="max-w-full mx-auto flex flex-wrap gap-6 justify-center">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -65,79 +72,28 @@
       <label class="block mb-2 text-gray-700 font-medium" for="jenis-ikan">
        Pilih Jenis Ikan
       </label>
-      <select class="w-full border-b-2 border-blue-600 text-gray-800 font-semibold bg-transparent py-1 px-2 appearance-none pr-8 focus:outline-none focus:border-blue-700" id="jenis-ikan" name="jenis-ikan">
-       <option disabled="" selected="">
-        Pilih jenis ikan budidaya Anda
-       </option>
-       <option>
-        Lele
-       </option>
-       <option>
-        Gurame
-       </option>
-       <option>
-        Nila
-       </option>
-       <option>
-        Mas
-       </option>
-      </select>
-     </div>
-     <div>
-      <label class="block mb-2 text-gray-700 font-medium" for="suhu-target">
-       Suhu Target (°C)
-      </label>
-      <div class="flex items-center space-x-3">
-       <button aria-label="Decrease temperature" class="text-blue-600 text-3xl font-bold select-none hover:text-blue-800" id="decreaseTemp" type="button">
-        ↓
-       </button>
-       <span class="text-blue-900 font-extrabold text-2xl w-12 text-center select-none" id="tempValue">
-        20
-       </span>
-       <button aria-label="Increase temperature" class="text-blue-600 text-3xl font-bold select-none hover:text-blue-800" id="increaseTemp" type="button">
-        ↑
-       </button>
-      </div>
-      <p class="mt-2 text-sm text-gray-600">
-       Sesuaikan suhu target sesuai kebutuhan ikan Anda.
-      </p>
-     </div>
-    </form>
-   </div>
-   <!-- Rentang Suhu Ideal -->
-   <div class="w-full sm:w-72 bg-white rounded-lg shadow-md p-6 border border-blue-300">
-    <h2 class="text-blue-600 text-lg font-semibold mb-4">
-     Rentang Suhu Ideal
-    </h2>
-    <p class="text-gray-700 font-medium">
-     Berikut rentang suhu ideal untuk beberapa jenis ikan budidaya:
-    </p>
-    <ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
-     <li>
-      <span class="font-semibold">
-       Lele:
-      </span>
-      26 - 30 °C
-     </li>
-     <li>
-      <span class="font-semibold">
-       Gurame:
-      </span>
-      24 - 28 °C
-     </li>
-     <li>
-      <span class="font-semibold">
-       Nila:
-      </span>
-      25 - 29 °C
-     </li>
-     <li>
-      <span class="font-semibold">
-       Mas:
-      </span>
-      22 - 27 °C
-     </li>
-    </ul>
+<select class="w-full border-b-2 border-blue-600 text-gray-800 font-semibold bg-transparent py-1 px-2 appearance-none pr-8 focus:outline-none focus:border-blue-700" id="jenis-ikan" name="jenis-ikan">
+  <option disabled selected>Pilih jenis ikan budidaya Anda</option>
+  <option>Nila</option>
+  <option>Patin</option>
+  <option>Papuyu</option>
+</select>
+
+<!-- Di bagian Rentang Suhu Ideal -->
+<ul class="list-disc list-inside mt-3 text-gray-700 space-y-1">
+  <li>
+    <span class="font-semibold">Nila:</span>
+    25 - 30 °C <span class="text-sm text-gray-500">(Suhu penetasan optimal)</span>
+  </li>
+  <li>
+    <span class="font-semibold">Patin:</span>
+    28 - 30 °C <span class="text-sm text-gray-500">(Suhu pemijahan ideal)</span>
+  </li>
+  <li>
+    <span class="font-semibold">Papuyu:</span>
+    25 - 28 °C <span class="text-sm text-gray-500">(Suhu perkembangan larva)</span>
+  </li>
+</ul>
     <p class="mt-4 text-sm text-gray-600">
      Pastikan suhu air selalu dalam rentang ini untuk hasil budidaya optimal.
     </p>
